@@ -11,8 +11,10 @@
   <modules>
     <module>zookeeper-registry</module>
       <module>rpc-api</module>
-    <module>rpc-service</module>
+      <module>rpc-service</module>
       <module>rpc-consumer</module>
+      <module>rpc-spring-boot</module>
+    <module>rpc-spring-boot-consumer</module>
   </modules>
 
   <name>rpc</name>
@@ -56,6 +58,16 @@
         <groupId>com.alibaba</groupId>
         <artifactId>dubbo</artifactId>
         <version>2.5.4</version>
+      </dependency>
+
+      <!-- 引入spring-boot相关以来 -->
+      <dependency>
+        <!-- Import dependency management from Spring Boot -->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>1.5.9.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
     </dependencies>
